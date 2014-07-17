@@ -13,9 +13,14 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
-gem 'twitter-bootstrap-rails'
+#gem 'twitter-bootstrap-rails', :github => 'seyhunak/twitter-bootstrap-rails', :branch => 'bootstrap3'
 gem 'therubyracer'
 gem 'less-rails'
+
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
+
+gem 'tzinfo-data'
 
 gem 'devise'
 

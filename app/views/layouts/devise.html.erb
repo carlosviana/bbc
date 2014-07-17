@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Login::BBC Advogados</title>
+
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+
+	<%= yield(:head) %>
+
+</head>
+<body>
+
+	<div class="col-lg-4 col-lg-offset-4">
+		<div class="panel panel-default" id="form">
+			<div class="panel-heading panel-login">
+				<h3 class="panel-title">Login :: BBC Advogados</h3>
+			</div>
+			<div class="panel-body">
+				<%= yield %>
+			</div>
+		</div>
+		
+	</div>
+	<div id="error_explanation">
+		<% if notice %>
+	  		<p class="alert alert-success"><%= notice %>
+	  			<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+	  		</p>
+		<% end %>
+		<% if alert %>
+	  		<p class="alert alert-danger"><%= alert %>
+	  			<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+	  		</p>
+		<% end %>
+	</div>
+</body>
+</html>
