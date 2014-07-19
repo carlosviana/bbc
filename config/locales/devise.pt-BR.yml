@@ -57,3 +57,8 @@ pt-BR:
       not_saved:
         one: "1 erro impediu a gravação de %{resource}:"
         other: "%{count} erros impediram a gravação de %{resource}:"
+  registrations:
+    user:
+      signed_up_but_not_approved: "Seu cadastro foi realizado com sucesso, mas sua conta ainda não foi ativada pelo administrator"
+  failure:
+    not_approved: "Sua conta ainda não foi ativada pelo administrator"

@@ -1,0 +1,19 @@
+<%= form_for @user, html: {role: "form"} do |f| %>
+
+<div class="form-group">
+
+	<%= f.label :nome %>
+	<%= f.text_field :nome, class: 'form-control' %>
+
+	<%= f.label :email %>
+	<%= f.text_field :email, class: 'form-control' %>
+
+	<%= f.label :telefone %>
+	<%= f.text_field :telefone, class: 'form-control' %>
+
+	<p></p>
+	<%= f.submit "Salvar", class: 'form-group' %>
+
+</div>
+
+<% end %>
