@@ -102,7 +102,21 @@
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
+                      <div id="error_explanation">
+                        <% if notice %>
+                        <p class="alert alert-success"><%= notice %>
+                          <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                        </p>
+                        <% end %>
+                        <% if alert %>
+                        <p class="alert alert-danger"><%= alert %>
+                          <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                        </p>
+                        <% end %>
+                      </div>
+
                       	<%= yield %>
+                        
                     </div>
                 </div>
                  <!-- /. ROW  -->

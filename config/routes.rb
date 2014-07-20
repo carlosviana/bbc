@@ -21,8 +21,8 @@ Rails.application.routes.draw do
 
   get 'users/:id/edit_password' => 'users#edit_password', :as => :edit_password_user
   
-  put 'users/:id' => 'users#update_password'
-  patch 'users/:id' => 'users#update_password'
+  put 'users/:id/update_password' => 'users#update_password'
+  patch 'users/:id/update_password' => 'users#update_password'
 
   root 'home#index'
   

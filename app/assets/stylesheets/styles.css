@@ -1,1 +1,9 @@
 .modal-footer {   border-top: 0px; }
+
+.notice:empty {
+  display: none;
+}
+
+.alert:empty {
+  display: none;
+}
