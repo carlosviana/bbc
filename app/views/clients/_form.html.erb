@@ -11,15 +11,53 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :nome %><br>
-    <%= f.text_field :nome %>
-  </div>
-  <div class="field">
-    <%= f.label :advogado %><br>
-    <%= f.text_field :advogado %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<div class="form-group">
+
+  <%= f.label :nome %>
+  <%= f.text_field :nome, class: 'form-control' %>
+
+  <%= f.label :razaosocial %>
+  <%= f.text_field :razaosocial, class: 'form-control' %>
+
+  <%= f.label :endereco %>
+  <%= f.text_field :endereco, class: 'form-control' %>
+
+  <%= f.label :numero %>
+  <%= f.text_field :numero, class: 'form-control' %>
+
+  <%= f.label :complemento %>
+  <%= f.text_field :complemento, class: 'form-control' %>
+
+  <%= f.label :bairro %>
+  <%= f.text_field :bairro, class: 'form-control' %>
+
+  <%= f.label :cidade %>
+  <%= f.text_field :cidade, class: 'form-control' %>
+
+  <%= f.label :uf %>
+  <%= f.text_field :uf, class: 'form-control' %>
+
+  <%= f.label :advogado %>
+  <%= f.text_field :advogado, class: 'form-control' %>
+
+  <%= f.label :contato %>
+  <%= f.text_field :contato, class: 'form-control' %>
+
+  <%= f.label :email %>
+  <%= f.text_field :email, class: 'form-control' %>
+
+  <%= f.label :tel1 %>
+  <%= f.text_field :tel1, class: 'form-control' %>
+
+  <%= f.label :tel2 %>
+  <%= f.text_field :tel2, class: 'form-control' %>
+
+  <%= f.label :obs %>
+  <%= f.text_area :obs, class: 'form-control' %>
+
+  <p></p>
+  <%= f.submit "Salvar", class: 'form-group' %>
+
+</div>
+
 <% end %>

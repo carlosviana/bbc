@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+
   resources :clients
+  get 'clients/:id/enabled' => 'clients#enabled', :as => :client_enabled
 
   devise_for :users
 

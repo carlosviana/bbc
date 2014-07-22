@@ -4,7 +4,11 @@
   <thead>
     <tr>
       <th>Nome</th>
+      <th>E-mail</th>
+      <th>Contato</th>
+      <th>Telefone</th>
       <th>Advogado</th>
+      <th>Status</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -13,7 +17,11 @@
     <% @clients.each do |client| %>
       <tr>
         <td><%= client.nome %></td>
+        <td><%= client.email %></td>
+        <td><%= client.contato %></td>
+        <td><%= client.tel1 %> - <%= client.tel2 %></td>
         <td><%= client.advogado %></td>
+        <td><td><%= link_to "#{client.enabled}", client_enabled_path(client.id) %></td></td>
         <td><%= link_to 'Show', client %></td>
         <td><%= link_to 'Edit', edit_client_path(client) %></td>
         <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
